@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Product Page</title>
+<!--Jquery UI CSS-->
+<link type="text/css" href="files/jqueryUI/css/ui-lightness/jquery-ui-1.8.custom.css" rel="stylesheet" />
+<!--/Jquery UI CSS-->
+
+<!--Custom CSS-->
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<!--[if IE]>
+		<link rel="stylesheet" href="style-ie.css" type="text/css" media="screen" />
+	<![endif]-->
+<!--/Custom CSS-->
+
+<!--Jquery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<!--/Jquery-->
+
+<!--CK Editor-->
+<script type="text/javascript" src="files/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="files/ckeditor/adapters/jquery.js"></script>
+<!--CK Editor-->
+
+<!--/Custom Script-->
+<script type="text/javascript" src="script.js"></script>
+<!--/Custom Script-->
+</head>
+<body id="body" class="layout-column-2">
+
+<!--.flare-bg-->
+<div class="flare-bg">
+<!--.nav-shadow-->
+<div class="nav-shadow"> 
+  <!--.header-->
+  <div class="header clearfix"> 
+    <!--.site-info-->
+    <div class="site-info clearfix">
+      <div class="logo-holder"> <img class="site-logo" src="Content/Images/site-logo.png"/> </div>
+      <div class="user-info-holder clearfix">
+        <ul>
+          <li>Welcome David Gelinas</li>
+          <li><img src="Content/Images/header-border.png"/></li>
+          <li><img valign="absbottom" src="Content/Images/settings.png" /><a href="#"><span>Settings</span></a></li>
+          <li><img src="Content/Images/header-border.png"/></li>
+          <li><img src="Content/Images/help.png" /><a href="#"><span>Help</span></a></li>
+          <li><img src="Content/Images/header-border.png"/></li>
+          <li><img src="Content/Images/logout.png" /><a href="#"><span>Log Out</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <!--/.site-info--> 
+    <!--.nav-1-->
+    <div class="nav-site nav-1 clearfix">
+      <ul class="nav-1-inner parent sf-menu">
+        <li class="first nav-1-home"><a href="#"><span></span></a></li>
+        <li class="current"><a href="#"><span>Client Management</span></a>
+          <ul class="child-1">
+            <li><a href="#"><span>Child 1</span></a></li>
+            <li><a href="#"><span>Child 2</span></a></li>
+            <li><a href="#"><span>Child 3</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span>Operations Management</span></a>
+          <ul class="child-1">
+            <li><a href="#"><span>Child 1</span></a></li>
+            <li><a href="#"><span>Child 2</span></a></li>
+            <li><a href="#"><span>Child 3</span></a></li>
+            <li><a href="#"><span>Child 4</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span>Systems Management</span></a></li>
+        <li class="last"><a href="#"><span>Campaign Management</span></a></li>
+      </ul>
+    </div>
+    <!--/.nav-1--> 
+  </div>
+  <!--/header--> 
+  <!--.breadcrumb-->
+  <div class="breadcrumb"> <a href="#"><span>Dashboard</span></a> &raquo; <a href="#"><span>Client Management</span></a> &raquo; <a href="#"><span>CSR Search/Select</span></a> &raquo; <a href="#"><span>Product List</span></a> &raquo; <span class="current-location">Step 1: Create</span> </div>
+  <!--/.breadcrumb--> 
+</div>
+<!--/.nav-shadow--> 
+
+<!--.section-title-->
+<div class="main-top">
+  <h1>Client Management: Datamark -Everest University (CSR ID# 000001)</h1>
+</div>
+<!--/.section-title--> 
+<!--.main-holder-->
+<div class="main-holder clearfix"> 
+  <!--.nav-2-->
+  <div class="nav-site nav-2 clearfix">
+    <ul>
+      <li class="first"><a href="#"><span>Search/Selected CSR</span></a></li>
+      <li><a href="#"><span>Account Profile</span></a></li>
+      <li class="current"><a href="#"><span>Products</span></a></li>
+      <li><a href="#"><span>Forms</span></a></li>
+      <li><a href="#"><span>Delivery</span></a></li>
+      <li class="last"><a href="#"><span>Data Services</span></a></li>
+    </ul>
+  </div>
+  <!--/.nav-2--> 
+  <!--.nav-3-->
+  <div class="nav-3 clearfix">
+    <ul>
+      <li class="current"><a href="#"><span><img class="icon" src="Content/Images/icon-email.png" />Create Product</span></a></li>
+      <li><a href="#"><span><img class="icon" src="Content/Images/icon-email.png" />Mass Upload</span></a></li>
+    </ul>
+  </div>
+  <!--/.nav-3--> 
+  <!--.column-holder-->
+  <div class="column-holder clearfix"> 
+    <!--.left-column-->
+    <div class="left-column clearfix"> 
+      <!--.step-menu-->
+      <div class="step-menu">
+        <h3>Steps:</h3>
+        <ul class="clearfix">
+          <li class="active clearfix">
+            <div><span><img class="check-box" src="Content/Images/active-check.png" />
+              <p>Select Product</p>
+              <img class="arrow" src="Content/Images/active-arrow.png" /></span></div>
+          </li>
+          <li class="visited clearfix">
+            <div><span><img class="check-box" src="Content/Images/visited-check.png" />
+              <p>Product Content</p>
+              <img class="arrow" src="Content/Images/visited-arrow.png" /></span></div>
+          </li>
+          <li class="visited clearfix">
+            <div><span><img class="check-box" src="Content/Images/visited-check.png" />
+              <p>Product Assignment</p>
+              <img class="arrow" src="Content/Images/visited-arrow.png" /></span></div>
+          </li>
+        </ul>
+      </div>
+      <!--/.step-menu--> 
+    </div>
+    <!--/.left-column--> 
+    <!--.right-column-->
+    <div class="right-column clearfix"> 
+      <!--.right-column-border-top-->
+      <div class="right-column-border-top"> 
+        <!--.location-title-->
+        <div class="location-title clearfix">
+          <h2>Create Product: Select Product Type</h2>
+        </div>
+        <!--/.location-title--> 
+      </div>
+      <!--/.right-column-border-top--> 
+      <!--.content-->
+      <div class="right-column-border-middle clearfix">
+        <div class="form-holder">
+          <form>
+            <ul class="form clearfix">
+              <!-- added to make the class work -->
+              <li class="left half-quarter">
+                <ul class="clearfix">
+                  <li class="required-parent required-select inline clearfix" style="position:relative">
+                    <div class="label-title">
+                      <label for="product-type">Product Type:</label>
+                    </div>
+                    <div class="half">
+                      <select class="required" data-required="this is a required field" id="campus-base">
+                        <option value="">Select an Option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                    <div class="inline"><img title="Tip for this field." class="field-qm south" src="Content/Images/qm.gif"/></div>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="select-properties">Select Properties:</label>
+                    </div>
+                    <div class="half">
+                      <div style="border:1px solid #ccc; overflow:auto; padding:5px; width:93%; height: 100px;">
+                        <div class="form-elements">
+                          <input type="checkbox" name="elearners" id="radio-elearners-1"/>
+                        </div>
+                        <label for="elearners">eLearners.com (eL)</label>
+                        <div class="form-elements">
+                          <input type="checkbox" name="earnmydegree" id="radio-earnmydegree-1"/>
+                        </div>
+                        <label for="earnmydegree">EarnMyDegree.com (EMD)</label>
+                        <div class="form-elements">
+                          <input type="checkbox" name="education-connections" id="radio-education-connections-1"/>
+                        </div>
+                        <label for="education-connections">Education Connections (ECS)</label>
+                        <div class="form-elements">
+                          <input type="checkbox" name="gradschools" id="radio-gradschools-1"/>
+                        </div>
+                        <label for="gradschools">GradSchools.com </label>
+                        <div class="form-elements">
+                          <input type="checkbox" name="extra" id="radio-extra-1"/>
+                        </div>
+                        <label for="extra">Extra Field</label>
+                      </div>
+                    </div>
+                    <div class="inline"><img title="Tip for this field." class="field-qm south" src="Content/Images/qm.gif"/></div>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title">
+                      <label for="product-setup">Product Setup:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="product-setup" id="radio-product-setup-1"/>
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-product-setup-1">Complete</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="product-setup" id="radio-product-setup-2"/>
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-product-setup-2">Incomplete</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="active-field">Active:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="active-field" id="radio-active-field-1"/>
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-active-field-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="active-field" id="radio-active-field-2"/>
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-active-field-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                </ul>
+                <!-- /nested ul inside left half-quarter --> 
+              </li>
+            </ul>
+            <!--/form -->
+            
+          </form>
+        </div>
+        <!-- /.form-holder --> 
+        
+      </div>
+      <!--.content-->
+      <div class="right-column-border-bottom"></div>
+    </div>
+    <!--/.right-column--> 
+  </div>
+  <!--/.column-holder--> 
+  
+</div>
+<!--/.main-holder-->
+<div id="go-to-submit" class="main-bottom clearfix">
+  <div class="submit-controls submit-button"> <a href="#"><span>Save</span></a> <a href="#"><span>Previous</span></a> <a href="#"><span>Next</span></a> </div>
+</div>
+
+<!--.footer-->
+
+<div class="footer">
+<div class="footer-shadow"></div>
+<div class="footer-controls-holder">
+  <div class="footer-controls">
+    <p class="go-to-submit"><a class="scroll" href="#go-to-submit">Page Down</a></p>
+    <p class="back-to-top"><a class="scroll" href="#body">Page Up</a></p>
+  </div>
+</div>
+<div class="copyright-logo-holder">
+  <div class="copyright-holder"> <span class="copyright-copy">&copy;</span>
+    <p class="coptyright-text">Copyright 2007 - 2010 Education Dynamics, LLC</p>
+  </div>
+  <div class="footer-logo-holder"> <img class="footer-logo" src="Content/Images/eddy-logo-footer.png" />
+    <div> </div>
+  </div>
+  <!--/.footer--> 
+</div>
+<!--.flare-bg-->
+</body>
+</html>

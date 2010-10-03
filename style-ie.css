@@ -1,0 +1,50 @@
+.clearfix {
+	zoom:1;
+}
+
+.form-legend {
+	_position:relative;/*Fixes Old Version of IE*/
+}
+
+	.form-legend h3{
+		position:relative;/*Fixes Old Version of IE*/
+	}
+
+.text-field {
+	font-size:1.2em;
+}
+
+.form .required-select .validation-confirm {
+	*top:20px;/*Fixes Select Confirm*/
+}
+
+.form .required-select .validation-error-container {
+	margin-top:-4px;/*Fixes Select Error Message*/
+}
+
+	.footer-logo {
+		display:inline-block;
+		margin:0 0 0 -200px;
+	}
+	
+	.footer .copyright-holder {
+		padding-top:.9em;
+	}
+	
+	
+/*Form Builder*/	
+
+
+.form-builder .form {
+	padding:0;
+	margin:.8em 0 0 0;
+}	
+
+.preview-pain .preview-close {
+	margin-top:1.1em;
+}
+
+.preview-pain .row-1-col-2 p{
+	margin-top:1.4em; 
+}
+	
