@@ -2154,11 +2154,11 @@ font-size:1.2em !important;
 
 
 /*css rules added by Ivan Balasi */
-.highlight-client {
+/*.highlight-client {
 	position:relative;
 	top: 10px;
 	right: 10px;
-}
+}*/
 
 .form .label-title label {
 		display:inline;
@@ -2175,7 +2175,8 @@ font-size:1.2em !important;
 		/*width: 140px;*/
 		/*height:12px;*/
 		width: 40%;
-		padding-right:10px;
+		/*padding-right:10px;*/
+		padding-right: .625em;		
 		clear:both;
 		display:inline;
 	}
@@ -2189,12 +2190,13 @@ font-size:1.2em !important;
 	
 .form .form-elements {
 		float:left;
-		padding-right:5px;
+		padding-right:5px;		
 		clear:none;
 	}
 	
 	.form .form-elements label {
-			margin-right: 8px;
+		margin-right: .5em;
+			/*margin-right: 8px;*/
 		}
 		
 	.form .form-elements .text-field {
@@ -2241,6 +2243,10 @@ font-size:1.2em !important;
 	width:93%;
 	height:6.25em;
 	}
+.form .inactive {
+	opacity: 0.5; 
+	filter: alpha(opacity=50);
+}	
 	
 .divider {
 	border-bottom:1px solid green;
@@ -2255,6 +2261,7 @@ font-size:1.2em !important;
 .no-margin {
 	margin:0;
 }
+
 
 
 /*.form .required-text  {
