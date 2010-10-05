@@ -82,12 +82,14 @@ $(document).ready(function () {
 	}
 
 	//Focus Blur Text Fields
-	$(".text-field").focus(function () {
+	$(".text-field, .text-field-1").focus(function () {
 		$(this).addClass("focused");
 	});
-	$(".text-field").blur(function () {
+	$(".text-field, .text-field-1").blur(function () {
 		$(this).removeClass("focused");
 	});
+	
+
 
 	//Activate CK Editor
 	//$('.ckeditor').ckeditor();

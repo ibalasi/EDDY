@@ -2263,12 +2263,38 @@ font-size:1.2em !important;
 }
 
 
+/*Ivan Balasi - New Version -Tables*/
+.form .form-horizontal-1 label, .form-horizontal-1 textarea, .form-horizontal-1 input, .form-horizontal-1 select {
+	margin-bottom: .6em;
+}
+
+.form .form-horizontal-1 textarea, .form-horizontal-1 input, .form-horizontal-1 select {
+	margin-left: .3em;
+}
+
+.form .form-horizontal-1 textarea {
+	width:96%;
+}
+
+.form .form-horizontal-1 label{
+	display:inline;
+	font-size:.75em;
+}
 
 /*.form .required-text  {
 	font-weight: 400;
 	font-size:1em;
 	color: red;
 }*/
+
+.text-field-1 {
+	padding:.2em;
+	font-size:1em;
+	border:1px solid #CCCCCC;
+	font-family: monospace;
+	font-weight:normal;
+	background:#fff url("Content/Images/field-bg.png") repeat-x;
+}
 	
 
 

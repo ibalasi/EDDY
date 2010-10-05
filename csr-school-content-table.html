@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Final Skin</title>
+<!--Jquery UI CSS-->
+<link type="text/css" href="files/jqueryUI/css/ui-lightness/jquery-ui-1.8.custom.css" rel="stylesheet" />
+<!--/Jquery UI CSS-->
+
+<!--Custom CSS-->
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+<!--[if IE]>
+		<link rel="stylesheet" href="style-ie.css" type="text/css" media="screen" />
+	<![endif]-->
+<!--/Custom CSS-->
+
+<!--Jquery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js" type="text/javascript"></script>
+<!--/Jquery-->
+
+<!--CK Editor-->
+<script type="text/javascript" src="files/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="files/ckeditor/adapters/jquery.js"></script>
+<!--CK Editor-->
+
+<!--/Custom Script-->
+<script type="text/javascript" src="script.js"></script>
+<!--/Custom Script-->
+</head>
+<body id="body" class="layout-column-2">
+
+<!--.flare-bg-->
+<div class="flare-bg">
+<!--.nav-shadow-->
+<div class="nav-shadow"> 
+  <!--.header-->
+  <div class="header clearfix"> 
+    <!--.site-info-->
+    <div class="site-info clearfix">
+      <div class="logo-holder"> <img class="site-logo" src="Content/Images/site-logo.png"/> </div>
+      <div class="user-info-holder clearfix">
+        <ul>
+          <li>Welcome David Gelinas</li>
+          <li><img src="Content/Images/header-border.png"/></li>
+          <li><img valign="absbottom" src="Content/Images/settings.png" /><a href="#"><span>Settings</span></a></li>
+          <li><img src="Content/Images/header-border.png"/></li>
+          <li><img src="Content/Images/help.png" /><a href="#"><span>Help</span></a></li>
+          <li><img src="Content/Images/header-border.png"/></li>
+          <li><img src="Content/Images/logout.png" /><a href="#"><span>Log Out</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <!--/.site-info--> 
+    <!--.nav-1-->
+    <div class="nav-site nav-1 clearfix">
+      <ul class="nav-1-inner parent sf-menu">
+        <li class="first nav-1-home"><a href="#"><span></span></a></li>
+        <li><a href="#"><span>System Management</span></a>
+          <ul class="child-1">
+            <li><a href="#"><span>Child 1</span></a></li>
+            <li><a href="#"><span>Child 2</span></a></li>
+            <li><a href="#"><span>Child 3</span></a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span>Form Management</span></a>
+          <ul class="child-1">
+            <li><a href="#"><span>Child 1</span></a></li>
+            <li><a href="#"><span>Child 2</span></a></li>
+            <li><a href="#"><span>Child 3</span></a></li>
+            <li><a href="#"><span>Child 4</span></a></li>
+          </ul>
+        </li>
+        <li class="current"><a href="#"><span>Delivery Management</span></a></li>
+        <li class="last"><a href="#"><span>Report Management</span></a></li>
+      </ul>
+    </div>
+    <!--/.nav-1--> 
+  </div>
+  <!--/header--> 
+  <!--.breadcrumb-->
+  <div class="breadcrumb"> <a href="#"><span>Dashboard</span></a> &raquo; <a href="#"><span>System Management</span></a> &raquo; <a href="#"><span>Import/Export Engine</span></a> &raquo; <a href="#"><span>Create Task</span></a> &raquo; <span class="current-location">Email</span> </div>
+  <!--/.breadcrumb--> 
+</div>
+<!--/.nav-shadow--> 
+
+<!--.section-title-->
+<div class="main-top">
+  <h1>Import/Export Engine</h1>
+</div>
+<!--/.section-title--> 
+<!--.main-holder-->
+<div class="main-holder clearfix"> 
+  <!--.nav-2-->
+  <div class="nav-site nav-2 clearfix">
+    <ul>
+      <li class="first"><a href="#"><span>Task List</span></a></li>
+      <li><a href="#"><span>Create Task</span></a></li>
+      <li class="current"><a href="#"><span>Edit Task</span></a></li>
+      <li><a href="#"><span>Suspend Task</span></a></li>
+      <li class="last"><a href="#"><span>Resume Task</span></a></li>
+    </ul>
+  </div>
+  <!--/.nav-2--> 
+  <!--.nav-3-->
+  <div class="nav-3 clearfix">
+    <ul>
+      <li><a href="#"><span><img class="icon" src="Content/Images/icon-email.png" />Email</span></a></li>
+      <li><a href="#"><span><img class="icon" src="Content/Images/icon-email.png" />FTP</span></a></li>
+      <li><a href="#"><span><img class="icon" src="Content/Images/icon-email.png" />Shared Folder</span></a></li>
+      <li class="current"><a href="#"><span><img class="icon" src="Content/Images/icon-email.png" />Database</span></a></li>
+    </ul>
+  </div>
+  <!--/.nav-3--> 
+  <!--.column-holder-->
+  <div class="column-holder clearfix"> 
+    <!--.left-column-->
+    <div class="left-column clearfix"> 
+      <!--.step-menu-->
+      <div class="step-menu">
+        <h3>Steps:</h3>
+        <ul class="clearfix">
+          <li class="visited clearfix">
+            <div><span><img class="check-box" src="Content/Images/visited-check.png" />
+              <p>Define Task</p>
+              <img class="arrow" src="Content/Images/visited-arrow.png" /></span></div>
+          </li>
+          <li class="visited clearfix">
+            <div><span><img class="check-box" src="Content/Images/visited-check.png" />
+              <p>Scheduler</p>
+              <img class="arrow" src="Content/Images/visited-arrow.png" /></span></div>
+          </li>
+          <li class="active clearfix">
+            <div><span><img class="check-box" src="Content/Images/active-check.png" />
+              <p>Source</p>
+              <img class="arrow" src="Content/Images/active-arrow.png" /></span></div>
+          </li>
+          <li class="inactive clearfix">
+            <div><span><img class="check-box" src="Content/Images/inactive-check.png" />
+              <p>Destination</p>
+              <img class="arrow" src="Content/Images/inactive-arrow.png" /></span></div>
+          </li>
+          <li class="inactive clearfix">
+            <div><span><img class="check-box" src="Content/Images/inactive-check.png" />
+              <p>Retry Strategy</p>
+              <img class="arrow" src="Content/Images/inactive-arrow.png" /></span></div>
+          </li>
+        </ul>
+      </div>
+      <!--/.step-menu--> 
+    </div>
+    <!--/.left-column--> 
+    <!--.right-column-->
+    <div class="right-column clearfix"> 
+      <!--.right-column-border-top-->
+      <div class="right-column-border-top"> 
+        <!--.location-title-->
+        <div class="location-title clearfix">
+          <h2>Create Client-School Relationship (CSR): School Content</h2>
+        </div>
+        <!--/.location-title--> 
+      </div>
+      <!--/.right-column-border-top--> 
+      <!--.content-->
+      <div class="right-column-border-middle clearfix">
+        <div class="form-holder clearfix">
+          <div class="highlight right">
+            <table>
+              <tr>
+                <td align="right"><strong>Paying Entity:</strong></td>
+                <td align="left">Datamark</td>
+              </tr>
+              <tr>
+                <td align="right">School Name:</td>
+                <td align="left">Everest University</td>
+              </tr>
+              <tr>
+                <td align="right">Partner Code:</td>
+                <td align="left">EU01</td>
+              </tr>
+              <tr>
+                <td align="right">CAM Assigned:</td>
+                <td align="left">Lenny Irgang</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!-- ./highlight-client -->
+        
+        <div class="inner-tabs clearfix"> 
+          <!--
+						Tab Configuration Using JS
+						
+						1. Add Class to the <ul> Called "js-tabs" this way it will know that it will use JS.
+						2. Give the group of tabs an Id in this cade it is "tabs-1" this will associate it with the hidden blocks
+						3. Name the anchors with a # + the same name as the ID of the hidden block. Best practive is to use the same naming convention as the ID and append an integer.
+						4. Add the class "current" to the one you want to display as default
+						
+						See below for Hidden block Configuration
+						-->
+          <ul class="js-tabs" id="tabs-1">
+            <li class="current"><a href="#school-related"><span>School Related</span></a></li>
+            <li><a href="#student-related"><span>Student Related</span></a></li>
+            <li><a href="#online-program"><span>Online Program Related</span></a></li>
+            <li><a href="#school-logo"><span>School Logo</span></a></li>
+          </ul>
+        </div>
+        <!--/.inner-tabs -->
+        <div class="form-holder">
+          <form>
+            <ul class="form tabs-1 clearfix" id="school-related">
+              <!-- added to make the class work -->
+              <li>
+                <div class="location-sub-title clearfix">
+                  <h4>School Related Content</h4>
+                </div>
+              </li>
+              <li class="left half-1">
+                <ul class="clearfix field-group-border">
+                  <li>
+                    <label for="school-description">School Description</label>
+                    <textarea data-required="Rick the Stick!" class="required text-field text-area-size-5" id="school-description"></textarea>
+                  </li>
+                </ul>
+                <!-- /school description -->
+                <ul class="clearfix field-group-border no-margin ">
+                  <li>
+                    <h4>Institution Related</h4>
+                  </li>
+                  <li>
+                    <table class="form-horizontal-1">
+                      <colgroup>
+                      <col style="width:150px;" />
+                      <col style="width:190px;"/>
+                      </colgroup>
+                      <tr>
+                        <td><div class="required-parent"><label for="active-enrollment">
+                          Active Enrollment and breakout (Online, Campus, Blend):                          
+                            </label></div>
+                        </td>
+                        <td><textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="active-enrollment"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td><div class="required-parent"><label for="rel-affiliation">
+                          Religious Affiliation):                          
+                            </label></div>
+                        </td>
+                        <td><div class="full"><input id="rel-affiliation" data-required="This is an error for Quest 1!" class="text-field-1 required"></div></td>
+                      </tr>
+                       <tr>
+                        <td><div class="required-parent"><label for="transfer-credits">Transfer Credits (undergrad or grad):</label></div>
+                        </td>
+                        <td><fieldset><input type="radio" name="transfer-credits" id="radio-transfer-credits-1"/> <label for="radio-scholarship-1">Yes</label> <input type="radio" name="transfer-credits" id="radio-transfer-credits-2"/> <label for="radio-transfer-credits-2">No</label></fieldset></td>
+                      </tr>
+                      <tr>
+                      	<td><div  class="required-parent">
+                         <label for="campus-base">Campus base (entirely online blended):</label>
+                         </div>               
+                        </td>
+                        <td>
+                        <select class="required full" data-required="this is a required field" id="campus-base">
+													<option value="">Select an Option</option>
+													<option value="1">Option 1</option>
+													<option value="2">Option 2</option>
+													<option value="3">Option 3</option>
+												</select
+                        ></td>
+                        </tr>
+                        <tr>
+<td><div  class="required-parent"><label for="campus-setting">Campus Setting:</label></div>
+</td>
+<td>
+<textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="campus-setting"></textarea>
+</td>
+</tr>
+<tr>
+<td><div  class="required-parent"><label for="destination-interest">Select your Destination of Interest(If ground based education is desired):</label></div>
+</td>
+<td><textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="destination-interes"></textarea>
+</td>
+</tr>
+                    </table>
+                  </li>
+                </ul>
+                <!-- /Institution Related --> 
+                
+              </li>
+              <!-- /.left .half-1 school related content-->
+              
+              <li class="right half-1">
+                <ul class="clearfix field-group-border">
+                  <li class="clearfix">
+                    <h4>Financial Related</h4>
+                  </li>
+                  <li class="required-parent required-select inline clearfix">
+                    <div class="label-title">
+                      <label for="cost-per-credit">Cost per Credit:</label>
+                    </div>
+                    <div class="form-elements">
+                      <select class="required" data-required="this is a required field" id="cost-per-credit">
+                        <option value="">Select an Option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="financial-aid">Financial Aid:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-financial-aid" id="radio-financial-aid-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-financial-aid-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-financial-aid" id="radio-financial-aid-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-financial-aid-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="title-IV-funding">Title IV Funding:</label>
+                    </div>
+                    <div class="form-elements">
+                      <input id="title-IV-funding" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="scholarship">Scholarship:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="scholarship" id="radio-scholarship-1"/>
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-scholarship-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="scholarship" id="radio-scholarship-2"/>
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-scholarship-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="payment-plan">Payment Plan:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="payment-plan" id="radio-payment-plan-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-list-1-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="payment-plan" id="radio-payment-plan-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-list-2-1">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="tuition">Tuition Reimbursement:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="tuition" id="radio-tuition-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-tuition-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="tuition" id="radio-tuition-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-tuition-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="required-parent required-select clearfix inline">
+                    <div class="label-title">
+                      <label for="application-fee">Application Fee:</label>
+                    </div>
+                    <div class="form-elements">
+                      <select class="required" data-required="this is a required field" id="application-fee">
+                        <option value="">Select an Option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="required-parent required-select clearfix inline">
+                    <div class="label-title">
+                      <label for="technology-fee">Technology Fee:</label>
+                    </div>
+                    <div class="form-elements">
+                      <select class="required" data-required="this is a required field" id="technology-fee">
+                        <option value="">Select an Option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="required-parent required-select clearfix inline">
+                    <div class="label-title">
+                      <label for="average-text">Average Text Book Costs <span class="small-title">(academic year)</span>: </label>
+                    </div>
+                    <div class="form-elements">
+                      <select class="required" data-required="this is a required field" id="average-text">
+                        <option value="">Select an Option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <!-- /financial related -->
+                <ul class="clearfix field-group-border">
+                  <li>
+                    <h4>Accreditation Related</h4>
+                  </li>
+                  <li class="required-parent required-select clearfix inline">
+                    <div class="label-title">
+                      <label for="inst-accreditation">Institutional Accreditation Type:</label>
+                    </div>
+                    <div class="form-elements">
+                      <select class="required" data-required="this is a required field" id="inst-accreditation">
+                        <option value="">Select an Option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="sector">Sector:</label>
+                    </div>
+                    <div class="form-elements">
+                      <input id="sector" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                    </div>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="carnegie-classification">Carnegie Classification:</label>
+                    </div>
+                    <div class="form-elements">
+                      <input id="carnegie-classification" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                    </div>
+                  </li>
+                </ul>
+                <!-- ./Accreditation Related --> 
+                
+              </li>
+              <!-- /.right .half-1-->
+            </ul>
+            <!-- /school related -->
+            
+            <ul class="form tabs-1 hide clearfix" id="student-related">
+              <li>
+                <div class="location-sub-title clearfix">
+                  <h4>Student Related Content</h4>
+                </div>
+              </li>
+              <li class="left half-1">
+                <ul class="clearfix field-group-border fieldset-reset">
+                  <li class="clearfix">
+                    <h4>Enrollment Related</h4>
+                  </li>
+                  <li class="required-parent required-select inline clearfix">
+                    <div class="label-title">
+                      <label for="average-score">Average SAT/ACT/GRE/GMAT score:</label>
+                    </div>
+                    <div class="form-elements">
+                      <select class="required" data-required="this is a required field" id="average-score">
+                        <option value="">Select an Option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </li>
+                  <li class="required-parent required-select clearfix">
+                    <div class="label-title">
+                      <label for="total-enrollment">Total Enrollment:</label>
+                    </div>
+                    <div class="form-elements">
+                      <input id="total-enrollment" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                    </div>
+                  </li>
+                  <fieldset>
+                    <li class="required-parent required-select clearfix">
+                      <div class="label-title">Requirements/Pre-requisites:</div>
+                      <div class="form-elements">&nbsp;</div>
+                    </li>
+                    <li class="required-parent required-select clearfix">
+                      <div class="label-title">
+                        <label for="gre">GRE:</label>
+                      </div>
+                      <div class="form-elements">
+                        <textarea data-required="Rick the Stick!" class="required text-field text-area-size-4" id="gre"></textarea>
+                      </div>
+                    </li>
+                    <li class="required-parent required-select clearfix">
+                      <div class="label-title">
+                        <label for="bachelors-degree">Bachelor's Degree:</label>
+                      </div>
+                      <div class="form-elements">
+                        <input id="bachelors-degree" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                      </div>
+                    </li>
+                    <li class="required-parent required-select clearfix">
+                      <div class="label-title">
+                        <label for="etc">Etc:</label>
+                      </div>
+                      <div class="form-elements">
+                        <input id="etc" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="label-title required-parent">
+                        <label for="gmat">GMAT not required for MBA:</label>
+                      </div>
+                      <fieldset>
+                        <div class="form-elements">
+                          <input type="radio" name="radio-gmat" id="radio-gmat-1" />
+                        </div>
+                        <div class="form-elements">
+                          <label for="radio-gmat-1">Yes</label>
+                        </div>
+                        <div class="form-elements">
+                          <input type="radio" name="radio-gmat" id="radio-gmat-2" />
+                        </div>
+                        <div class="form-elements">
+                          <label for="radio-gmat-2">No</label>
+                        </div>
+                      </fieldset>
+                    </li>
+                  </fieldset>
+                </ul>
+                <!-- /enrollment related -->
+                <ul class="clearfix field-group-border">
+                  <li>
+                    <h4>Military Related</h4>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="active-duty-tuition">Active Duty Tuition:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-financial-aid" id="radio-active-duty-tuition-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-financial-aid-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-financial-aid" id="radio-active-duty-tuition-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-active-duty-tuition-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="special-military">Special Military Discounts:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-special-military" id="radio-special-military-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-special-military-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-special-military" id="radio-special-military-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-special-military-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="spouse-dependent">Spouse/Dependent Benefits:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-spouse-dependent" id="radio-spouse-dependent-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-spouse-dependent-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-spouse-dependent" id="radio-spouse-dependent-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-spouse-dependent-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="exams-college-credit">Exams for College Credit (DANTES):</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-exams-college-credit" id="radio-exams-college-credit-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-exams-college-credit-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-exams-college-credit" id="radio-exams-college-credit-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-exams-college-credit-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                </ul>
+                <!-- /Military Related --> 
+              </li>
+              <!-- /.left half-1 student related -->
+              
+              <li class="right half-1">
+                <ul class="clearfix field-group-border">
+                  <li class="clearfix">
+                    <h4>Student Services</h4>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="library-reference">Library/Reference Resources:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-library-reference" id="radio-library-reference-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-library-reference-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-library-reference" id="radio-library-reference-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-library-reference-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="career-counseling">Career Counseling:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-career-counseling" id="radio-career-counseling-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-career-counseling-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-career-counseling" id="radio-career-counseling-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-career-counseling-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="academic-advisors">Academic Advisors:</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-academic-advisors" id="radio-academic-advisors-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-academic-advisors-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-academic-advisors" id="radio-academic-advisors-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-academic-advisors-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="tech-support">Tech support access: <span class="small-title">(email, live chat, toll free, etc.)</span></label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-tech-support" id="radio-tech-support-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-tech-support-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-tech-support" id="radio-tech-support-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-tech-support-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                </ul>
+                <!-- /student services -->
+                <ul class="clearfix field-group-border fieldset-reset">
+                  <li class="clearfix">
+                    <h4>Student Related</h4>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="percent-students">Percent (%) of full time/part time students:</label>
+                    </div>
+                    <div class="form-elements">
+                      <textarea data-required="Rick the Stick!" class="required text-field text-area-size-4" id="percent-students"></textarea>
+                    </div>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="campus-location">Campus location for students to visit:</label>
+                    </div>
+                    <div class="form-elements">
+                      <input id="campus-location" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                    </div>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="geographic-restrictions">Geographic Restrictions:</label>
+                    </div>
+                    <div class="form-elements">
+                      <textarea data-required="Rick the Stick!" class="required text-field text-area-size-4" id="geographic-restrictions"></textarea>
+                    </div>
+                  </li>
+                </ul>
+                <!-- /student related box--> 
+              </li>
+              <!-- /.right .half-1-->
+              
+            </ul>
+            <!--/student related content-->
+            
+            <ul class="form tabs-1 hide clearfix" id="online-program">
+              <li>
+                <div class="location-sub-title clearfix">
+                  <h4>Online Program Related Content</h4>
+                </div>
+              </li>
+              <li class="left half-1">
+                <ul class="clearfix field-group-border">
+                  <li class="clearfix">
+                    <h4>Schedule  Related - Online Programs</h4>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="length-program">Lenght of Program:</label>
+                    </div>
+                    <div class="form-elements">
+                      <input id="length-program" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <div class="label-title required-parent">
+                      <label for="weekly-schedule">Weekly schedule requirements (synchronous meeting times):</label>
+                    </div>
+                    <fieldset>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-weekly-schedule" id="radio-weekly-schedule-1" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-weekly-schedule-1">Yes</label>
+                      </div>
+                      <div class="form-elements">
+                        <input type="radio" name="radio-weekly-schedule" id="radio-weekly-schedule-2" />
+                      </div>
+                      <div class="form-elements">
+                        <label for="radio-weekly-schedule-2">No</label>
+                      </div>
+                    </fieldset>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="calendar-type">Calendar Type (including start date, end date, vacations):</label>
+                    </div>
+                    <div class="form-elements">
+                      <textarea data-required="Rick the Stick!" class="required text-field text-area-size-4" id="calendar-type"></textarea>
+                    </div>
+                  </li>
+                  <li class="clearfix">
+                    <h4>Schedule  Related - Campus Programs</h4>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="length-program-1">Lenght of Program:</label>
+                    </div>
+                    <div class="form-elements">
+                      <input id="length-program-1" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
+                    </div>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="calendar-type-1">Calendar Type (including start date, end date, vacations):</label>
+                    </div>
+                    <div class="form-elements">
+                      <textarea data-required="Rick the Stick!" class="required text-field text-area-size-4" id="calendar-type-1"></textarea>
+                    </div>
+                  </li>
+                </ul>
+                <!-- /school related online programs --> 
+              </li>
+              <!-- /.left .half-1 online program-->
+              <li class="right half-1">
+                <ul class="clearfix field-group-border">
+                  <li>
+                    <h4>Technology Requirements</h4>
+                  </li>
+                  <li class="required-parent required-select inline clearfix">
+                    <div class="label-title">
+                      <label for="computer-requirements">Computer Requirements:</label>
+                    </div>
+                    <div class="form-elements">
+                      <select class="required" data-required="this is a required field" id="computer-requirements">
+                        <option value="">Select an Option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                    </div>
+                  </li>
+                </ul>
+                <!-- /technlogy requirements -->
+                <ul class="clearfix field-group-border">
+                  <li>
+                    <h4>Learning Format - Online Format</h4>
+                  </li>
+                  <li class="required-parent clearfix">
+                    <div class="label-title">
+                      <label for="LMS-platform">LMS platform (Blackboard, etc.):</label>
+                    </div>
+                    <div class="form-elements">
+                      <textarea data-required="Rick the Stick!" class="required text-field text-area-size-4" id="LMS-platform-1"></textarea>
+                    </div>
+                  </li>
+                </ul>
+                <!-- /learning format --> 
+              </li>
+              <!-- /.right .half-1 online program-->
+              
+            </ul>
+            <!-- /online program content -->
+            
+            <ul class="form tabs-1 hide clearfix" id="school-logo">
+            <li>
+              <div class="location-sub-title clearfix">
+                <h4>School Logo</h4>
+              </div>
+            </li>
+            <li class="left">
+              <ul class="clearfix field-group-border">
+              <li class="left half-1" style="border: 1px solid #000;"><!--left column--> 
+                logo 
+                <!--<ul style="border:1px solid #000;">
+                                		<li class="required-parent clearfix">
+											<div class="label-title"><label for="logo-name">Logo Name:</label></div>
+                                    		<div class="form-elements"><input id="logo-name" data-required="This is an error for Quest 1!" class="required text-field" type="text"/> <img title="Tip for this field." class="field-qm south" src="Content/Images/qm.gif"/></div>
+										</li>
+                                        <li class="required-parent clearfix">
+											<div class="label-title"><label for="description">Description:</label></div>
+                                    		<div class="form-elements"><input id="description" data-required="This is an error for Quest 1!" class="required text-field" type="text"/> <img title="Tip for this field." class="field-qm south" src="Content/Images/qm.gif"/></div>
+										</li>
+                                        <li class="required-parent clearfix">
+											<div class="label-title"><label for="description">Upload File:</label></div>
+                                    		                                    		
+										</li>
+                                         <li class="required-parent clearfix">
+											<div><input id="description" data-required="This is an error for Quest 1!" class="text-field file" type="file"/><img title="Tip for this field." class="field-qm south" src="Content/Images/qm.gif"/></div>
+                                    		                                    		
+										</li>                                        
+
+                               		</ul>--><!--left column--> 
+              </li>
+              <!-- left half school logo content  -->
+              
+              <li class="right half-1" style="border: 1px solid #000;">Logo Name </li>
+              <ul>
+                <li> </li>
+              </ul>
+              <!-- /school logo content -->
+              
+          </form>
+        </div>
+        <!-- /.form-holder --> 
+        
+      </div>
+      <!--.content-->
+      <div class="right-column-border-bottom"></div>
+    </div>
+    <!--/.right-column--> 
+  </div>
+  <!--/.column-holder--> 
+  
+</div>
+<!--/.main-holder-->
+<div id="go-to-submit" class="main-bottom clearfix">
+  <div class="submit-controls submit-button"> <a href="#"><span>Previous</span></a> <a href="#"><span>Cancel</span></a> <a href="#"><span>Save & Continue</span></a> </div>
+</div>
+
+<!--.footer-->
+
+<div class="footer">
+<div class="footer-shadow"></div>
+<div class="footer-controls-holder">
+  <div class="footer-controls">
+    <p class="go-to-submit"><a class="scroll" href="#go-to-submit">Page Down</a></p>
+    <p class="back-to-top"><a class="scroll" href="#body">Page Up</a></p>
+  </div>
+</div>
+<div class="copyright-logo-holder">
+  <div class="copyright-holder"> <span class="copyright-copy">&copy;</span>
+    <p class="coptyright-text">Copyright 2007 - 2010 Education Dynamics, LLC</p>
+  </div>
+  <div class="footer-logo-holder"> <img class="footer-logo" src="Content/Images/eddy-logo-footer.png" />
+    <div> </div>
+  </div>
+  <!--/.footer--> 
+</div>
+<!--.flare-bg-->
+</body>
+</html>
