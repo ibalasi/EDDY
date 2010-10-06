@@ -1126,7 +1126,7 @@ ul.sf-menu li li li.sfHover ul {
 
 /* Validation Error */
 
-.form li {
+.form li, .form tr {
 	position:relative;
 }
 
@@ -2185,7 +2185,7 @@ font-size:1.2em !important;
 	}
 	
 .form .small-title {
-		font-size:.563em;
+		font-size:.7em;
 	}
 	
 .form .form-elements {
@@ -2264,11 +2264,13 @@ font-size:1.2em !important;
 
 
 /*Ivan Balasi - New Version -Tables*/
-.form .form-horizontal-1 label, .form-horizontal-1 textarea, .form-horizontal-1 input, .form-horizontal-1 select {
-	margin-bottom: .6em;
+
+
+.form  .form-horizontal-1 label, .form-horizontal-1 textarea, .form-horizontal-1 input, .form-horizontal-1 select, .radio-list-1 {
+	margin-bottom: .8em;
 }
 
-.form .form-horizontal-1 textarea, .form-horizontal-1 input, .form-horizontal-1 select {
+.form .form-horizontal-1 textarea, .form-horizontal-1 input, .form-horizontal-1 select, .radio-list-1 {
 	margin-left: .3em;
 }
 
@@ -2280,6 +2282,18 @@ font-size:1.2em !important;
 	display:inline;
 	font-size:.75em;
 }
+.form .form-horizontal-1 .label-holder label{
+	margin-right:.5em;
+	display:block;
+	text-align:right;
+	padding: .2em;
+}
+
+/*.form .form-horizontal-1 .label-holder label{
+	margin-right:.5em;
+	float: right;
+	text-align:right;
+}*/
 
 /*.form .required-text  {
 	font-weight: 400;
@@ -2295,6 +2309,7 @@ font-size:1.2em !important;
 	font-weight:normal;
 	background:#fff url("Content/Images/field-bg.png") repeat-x;
 }
-	
-
-
+.inactive {
+	opacity: 0.5; 
+	filter: alpha(opacity=50);
+}	

@@ -217,8 +217,10 @@
               <li class="left half-1">
                 <ul class="clearfix field-group-border">
                   <li>
-                    <label for="school-description">School Description</label>
-                    <textarea data-required="Rick the Stick!" class="required text-field text-area-size-5" id="school-description"></textarea>
+                    <div class="form-horizontal-1">
+                      <label for="school-description">School Description</label>
+                    </div>
+                    <textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="school-description"></textarea>
                   </li>
                 </ul>
                 <!-- /school description -->
@@ -233,51 +235,56 @@
                       <col style="width:190px;"/>
                       </colgroup>
                       <tr>
-                        <td><div class="required-parent"><label for="active-enrollment">
-                          Active Enrollment and breakout (Online, Campus, Blend):                          
-                            </label></div>
-                        </td>
+                        <td><div class="required-parent label-holder">
+                            <label for="active-enrollment"> Active Enrollment and breakout (Online, Campus, Blend): </label>
+                          </div></td>
                         <td><textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="active-enrollment"></textarea></td>
                       </tr>
                       <tr>
-                        <td><div class="required-parent"><label for="rel-affiliation">
-                          Religious Affiliation):                          
-                            </label></div>
-                        </td>
-                        <td><div class="full"><input id="rel-affiliation" data-required="This is an error for Quest 1!" class="text-field-1 required"></div></td>
-                      </tr>
-                       <tr>
-                        <td><div class="required-parent"><label for="transfer-credits">Transfer Credits (undergrad or grad):</label></div>
-                        </td>
-                        <td><fieldset><input type="radio" name="transfer-credits" id="radio-transfer-credits-1"/> <label for="radio-scholarship-1">Yes</label> <input type="radio" name="transfer-credits" id="radio-transfer-credits-2"/> <label for="radio-transfer-credits-2">No</label></fieldset></td>
+                        <td><div class="required-parent label-holder">
+                            <label for="rel-affiliation"> Religious Affiliation): </label>
+                          </div></td>
+                        <td><div class="full">
+                            <input id="rel-affiliation" data-required="This is an error for Quest 1!" class="text-field-1 required">
+                          </div></td>
                       </tr>
                       <tr>
-                      	<td><div  class="required-parent">
-                         <label for="campus-base">Campus base (entirely online blended):</label>
-                         </div>               
-                        </td>
-                        <td>
-                        <select class="required full" data-required="this is a required field" id="campus-base">
-													<option value="">Select an Option</option>
-													<option value="1">Option 1</option>
-													<option value="2">Option 2</option>
-													<option value="3">Option 3</option>
-												</select
+                        <td><div class="required-parent label-holder clear">
+                            <label for="transfer-credits">Transfer Credits (undergrad or grad):</label>
+                          </div></td>
+                        <td><fieldset>
+                        <div class="radio-list-1">
+                            <input type="radio" name="transfer-credits" id="radio-transfer-credits-1"/>
+                            <label for="radio-scholarship-1">Yes</label>
+                            <input type="radio" name="transfer-credits" id="radio-transfer-credits-2"/>
+                            <label for="radio-transfer-credits-2">No</label>
+                            </div>
+                          </fieldset></td>
+                      </tr>
+                      <tr>
+                        <td><div  class="required-parent label-holder">
+                            <label for="campus-base">Campus base (entirely online blended):</label>
+                          </div></td>
+                        <td><select class="required full" data-required="this is a required field" id="campus-base">
+                            <option value="">Select an Option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select
                         ></td>
-                        </tr>
-                        <tr>
-<td><div  class="required-parent"><label for="campus-setting">Campus Setting:</label></div>
-</td>
-<td>
-<textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="campus-setting"></textarea>
-</td>
-</tr>
-<tr>
-<td><div  class="required-parent"><label for="destination-interest">Select your Destination of Interest(If ground based education is desired):</label></div>
-</td>
-<td><textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="destination-interes"></textarea>
-</td>
-</tr>
+                      </tr>
+                      <tr>
+                        <td><div class="required-parent label-holder">
+                            <label for="campus-setting">Campus Setting:</label>
+                          </div></td>
+                        <td><textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="campus-setting"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td><div  class="required-parent label-holder">
+                            <label for="destination-interest">Select your Destination of Interest(If ground based education is desired):</label>
+                          </div></td>
+                        <td><textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="destination-interes"></textarea></td>
+                      </tr>
                     </table>
                   </li>
                 </ul>
@@ -291,176 +298,161 @@
                   <li class="clearfix">
                     <h4>Financial Related</h4>
                   </li>
-                  <li class="required-parent required-select inline clearfix">
-                    <div class="label-title">
-                      <label for="cost-per-credit">Cost per Credit:</label>
-                    </div>
-                    <div class="form-elements">
-                      <select class="required" data-required="this is a required field" id="cost-per-credit">
-                        <option value="">Select an Option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <div class="label-title required-parent">
-                      <label for="financial-aid">Financial Aid:</label>
-                    </div>
-                    <fieldset>
-                      <div class="form-elements">
-                        <input type="radio" name="radio-financial-aid" id="radio-financial-aid-1" />
-                      </div>
-                      <div class="form-elements">
-                        <label for="radio-financial-aid-1">Yes</label>
-                      </div>
-                      <div class="form-elements">
-                        <input type="radio" name="radio-financial-aid" id="radio-financial-aid-2" />
-                      </div>
-                      <div class="form-elements">
-                        <label for="radio-financial-aid-2">No</label>
-                      </div>
-                    </fieldset>
-                  </li>
-                  <li class="required-parent clearfix">
-                    <div class="label-title">
-                      <label for="title-IV-funding">Title IV Funding:</label>
-                    </div>
-                    <div class="form-elements">
-                      <input id="title-IV-funding" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <div class="label-title required-parent">
-                      <label for="scholarship">Scholarship:</label>
-                    </div>
-                    <fieldset>
-                      <div class="form-elements">
-                        <input type="radio" name="scholarship" id="radio-scholarship-1"/>
-                      </div>
-                      <div class="form-elements">
-                        <label for="radio-scholarship-1">Yes</label>
-                      </div>
-                      <div class="form-elements">
-                        <input type="radio" name="scholarship" id="radio-scholarship-2"/>
-                      </div>
-                      <div class="form-elements">
-                        <label for="radio-scholarship-2">No</label>
-                      </div>
-                    </fieldset>
-                  </li>
-                  <li class="clearfix">
-                    <div class="label-title required-parent">
-                      <label for="payment-plan">Payment Plan:</label>
-                    </div>
-                    <fieldset>
-                      <div class="form-elements">
-                        <input type="radio" name="payment-plan" id="radio-payment-plan-1" />
-                      </div>
-                      <div class="form-elements">
-                        <label for="radio-list-1-1">Yes</label>
-                      </div>
-                      <div class="form-elements">
-                        <input type="radio" name="payment-plan" id="radio-payment-plan-2" />
-                      </div>
-                      <div class="form-elements">
-                        <label for="radio-list-2-1">No</label>
-                      </div>
-                    </fieldset>
-                  </li>
-                  <li class="clearfix">
-                    <div class="label-title required-parent">
-                      <label for="tuition">Tuition Reimbursement:</label>
-                    </div>
-                    <fieldset>
-                      <div class="form-elements">
-                        <input type="radio" name="tuition" id="radio-tuition-1" />
-                      </div>
-                      <div class="form-elements">
-                        <label for="radio-tuition-1">Yes</label>
-                      </div>
-                      <div class="form-elements">
-                        <input type="radio" name="tuition" id="radio-tuition-2" />
-                      </div>
-                      <div class="form-elements">
-                        <label for="radio-tuition-2">No</label>
-                      </div>
-                    </fieldset>
-                  </li>
-                  <li class="required-parent required-select clearfix inline">
-                    <div class="label-title">
-                      <label for="application-fee">Application Fee:</label>
-                    </div>
-                    <div class="form-elements">
-                      <select class="required" data-required="this is a required field" id="application-fee">
-                        <option value="">Select an Option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="required-parent required-select clearfix inline">
-                    <div class="label-title">
-                      <label for="technology-fee">Technology Fee:</label>
-                    </div>
-                    <div class="form-elements">
-                      <select class="required" data-required="this is a required field" id="technology-fee">
-                        <option value="">Select an Option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="required-parent required-select clearfix inline">
-                    <div class="label-title">
-                      <label for="average-text">Average Text Book Costs <span class="small-title">(academic year)</span>: </label>
-                    </div>
-                    <div class="form-elements">
-                      <select class="required" data-required="this is a required field" id="average-text">
-                        <option value="">Select an Option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </li>
+                  <table class="form-horizontal-1">
+                    <colgroup>
+                    <col style="width:150px;" />
+                    <col style="width:190px;"/>
+                    </colgroup>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="cost-per-credit">Cost per Credit:</label>
+                        </div></td>
+                      <td><select class="required full" data-required="this is a required field" id="cost-per-credit">
+                          <option value="">Select an Option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="financial-aid">Financial Aid:</label>
+                        </div></td>
+                      <td><fieldset>
+                      	<div class="radio-list-1">
+                          <input type="radio" name="radio-financial-aid" id="radio-financial-aid-1" />
+                          <label for="radio-financial-aid-1">Yes</label>
+                          <input type="radio" name="radio-financial-aid" id="radio-financial-aid-2" />
+                          <label for="radio-financial-aid-2">No</label>
+                          </div>
+                        </fieldset></td>
+                    </tr>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="title-IV-funding">Title IV Funding:</label>
+                        </div></td>
+                      <td><div class="full">
+                          <input id="title-IV-funding" data-required="This is an error for Quest 1!" class="required text-field-1" type="text"/>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="scholarship">Scholarship:</label>
+                        </div></td>
+                      <td><fieldset>
+                      <div class="radio-list-1">
+                          <input type="radio" name="scholarship" id="radio-scholarship-1"/>
+                          <label for="radio-scholarship-1">Yes</label>
+                          <input type="radio" name="scholarship" id="radio-scholarship-2"/>
+                          <label for="radio-scholarship-2">No</label>
+                          </div>
+                        </fieldset></td>
+                    </tr>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="payment-plan">Payment Plan:</label>
+                        </div></td>
+                      <td><fieldset>
+                      	<div class="radio-list-1">	
+                          <input type="radio" name="payment-plan" id="radio-payment-plan-1" />
+                          <label for="radio-list-1-1">Yes</label>
+                          <input type="radio" name="payment-plan" id="radio-payment-plan-2" />
+                          <label for="radio-list-2-1">No</label>
+                          </div>
+                        </fieldset>
+                       
+                        </td>
+                    </tr>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="tuition">Tuition Reimbursement:</label>
+                        </div></td>
+                      <td><fieldset>
+                      <div class="radio-list-1">
+                          <input type="radio" name="tuition" id="radio-tuition-1" />
+                          <label for="radio-tuition-1">Yes</label>
+                          <input type="radio" name="tuition" id="radio-tuition-2" />
+                          <label for="radio-tuition-2">No</label>
+                          </div>
+                        </fieldset>                        
+                        </td>
+                    </tr>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="application-fee">Application Fee:</label>
+                        </div></td>
+                      <td><select class="required full" data-required="this is a required field" id="application-fee">
+                          <option value="">Select an Option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="technology-fee">Technology Fee:</label>
+                        </div></td>
+                      <td><select class="required full" data-required="this is a required field" id="technology-fee">
+                          <option value="">Select an Option</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                          <option value="3">Option 3</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                      <td><div class="required-parent label-holder">
+                          <label for="average-text">Average Text Book Costs <span class="small-title">(academic year)</span>: </label>
+                        </div></td>
+                      <td><div class="full">
+                          <select class="required full" data-required="this is a required field" id="average-text">
+                            <option value="">Select an Option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select>
+                        </div></td>
+                    </tr>
+                  </table>
                 </ul>
                 <!-- /financial related -->
                 <ul class="clearfix field-group-border">
                   <li>
                     <h4>Accreditation Related</h4>
                   </li>
-                  <li class="required-parent required-select clearfix inline">
-                    <div class="label-title">
-                      <label for="inst-accreditation">Institutional Accreditation Type:</label>
-                    </div>
-                    <div class="form-elements">
-                      <select class="required" data-required="this is a required field" id="inst-accreditation">
-                        <option value="">Select an Option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
-                  </li>
-                  <li class="required-parent clearfix">
-                    <div class="label-title">
-                      <label for="sector">Sector:</label>
-                    </div>
-                    <div class="form-elements">
-                      <input id="sector" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
-                    </div>
-                  </li>
-                  <li class="required-parent clearfix">
-                    <div class="label-title">
-                      <label for="carnegie-classification">Carnegie Classification:</label>
-                    </div>
-                    <div class="form-elements">
-                      <input id="carnegie-classification" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
-                    </div>
+                  <li>
+                    <table class="form-horizontal-1">
+                      <colgroup>
+                      <col style="width:150px;" />
+                      <col style="width:190px;"/>
+                      </colgroup>
+                      <tr>
+                        <td><div class="required-parent label-holder">
+                            <label for="inst-accreditation">Institutional Accreditation Type:</label>
+                          </div></td>
+                        <td><select class="required full" data-required="this is a required field" id="inst-accreditation">
+                            <option value="">Select an Option</option>
+                            <option value="1">Option 1</option>
+                            <option value="2">Option 2</option>
+                            <option value="3">Option 3</option>
+                          </select></td>
+                      </tr>
+                      <tr>
+                        <td><div class="required-parent label-holder">
+                            <label for="sector">Sector:</label>
+                          </div></td>
+                        <td><div class="full">
+                            <input id="sector" data-required="This is an error for Quest 1!" class="required text-field-1" type="text"/>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td><div class="required-parent label-holder">
+                            <label for="carnegie-classification">Carnegie Classification:</label>
+                          </div></td>
+                        <td><div class="full">
+                            <input id="carnegie-classification" data-required="This is an error for Quest 1!" class="required text-field-1" type="text"/>
+                          </div></td>
+                      </tr>
+                    </table>
                   </li>
                 </ul>
                 <!-- ./Accreditation Related --> 
@@ -481,76 +473,57 @@
                   <li class="clearfix">
                     <h4>Enrollment Related</h4>
                   </li>
-                  <li class="required-parent required-select inline clearfix">
-                    <div class="label-title">
-                      <label for="average-score">Average SAT/ACT/GRE/GMAT score:</label>
-                    </div>
-                    <div class="form-elements">
-                      <select class="required" data-required="this is a required field" id="average-score">
-                        <option value="">Select an Option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                    </div>
+                  <li>
+                  <table class="form-horizontal-1">
+                      <colgroup>
+                      <col style="width:150px;" />
+                      <col style="width:190px;"/>
+                      </colgroup>
+                      <tr>
+                        <td><div class="required-parent label-holder">
+                            <label for="average-score">Average SAT/ACT/GRE/GMAT score:</label>
+
+                          </div></td>
+                        <td><select class="required full" data-required="this is a required field" id="average-score">
+												<option value="">Select an Option</option>
+												<option value="1">Option 1</option>
+												<option value="2">Option 2</option>
+												<option value="3">Option 3</option>
+											</select>
+</td>
+                      </tr>
+                      <tr>
+                        <td><div class="required-parent label-holder">
+                            <label for="total-enrollment">Total Enrollment:</label>
+                          </div></td>
+                        <td><div class="full">
+                           <input id="total-enrollment" data-required="This is an error for Quest 1!" class="required text-field-1" type="text"/>
+                          </div>
+                          </td>
+                          </tr>
+                          <tr>
+                        <td><div class="label-holder">
+                            <label>Requirements/Pre-requisites:</label>
+                          </div></td>
+                        <td>&nbsp;
+                          </td>
+                          </tr>
+                          <tr>
+                        <td><div class="required-parent label-holder">
+                            <label for="gre">GRE:</label>
+                          </div></td>
+                        <td><textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="gre"></textarea></td>
+                      </tr>
+                      <tr>
+                        <td><div  class="required-parent label-holder">
+                            <label for="destination-interest">Select your Destination of Interest(If ground based education is desired):</label>
+                          </div></td>
+                        <td><textarea data-required="Rick the Stick!" class="required text-field-1 text-area-size" id="destination-interes"></textarea></td>
+                      </tr>
+                          
+                          
+                          </table>
                   </li>
-                  <li class="required-parent required-select clearfix">
-                    <div class="label-title">
-                      <label for="total-enrollment">Total Enrollment:</label>
-                    </div>
-                    <div class="form-elements">
-                      <input id="total-enrollment" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
-                    </div>
-                  </li>
-                  <fieldset>
-                    <li class="required-parent required-select clearfix">
-                      <div class="label-title">Requirements/Pre-requisites:</div>
-                      <div class="form-elements">&nbsp;</div>
-                    </li>
-                    <li class="required-parent required-select clearfix">
-                      <div class="label-title">
-                        <label for="gre">GRE:</label>
-                      </div>
-                      <div class="form-elements">
-                        <textarea data-required="Rick the Stick!" class="required text-field text-area-size-4" id="gre"></textarea>
-                      </div>
-                    </li>
-                    <li class="required-parent required-select clearfix">
-                      <div class="label-title">
-                        <label for="bachelors-degree">Bachelor's Degree:</label>
-                      </div>
-                      <div class="form-elements">
-                        <input id="bachelors-degree" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
-                      </div>
-                    </li>
-                    <li class="required-parent required-select clearfix">
-                      <div class="label-title">
-                        <label for="etc">Etc:</label>
-                      </div>
-                      <div class="form-elements">
-                        <input id="etc" data-required="This is an error for Quest 1!" class="required text-field" type="text"/>
-                      </div>
-                    </li>
-                    <li class="clearfix">
-                      <div class="label-title required-parent">
-                        <label for="gmat">GMAT not required for MBA:</label>
-                      </div>
-                      <fieldset>
-                        <div class="form-elements">
-                          <input type="radio" name="radio-gmat" id="radio-gmat-1" />
-                        </div>
-                        <div class="form-elements">
-                          <label for="radio-gmat-1">Yes</label>
-                        </div>
-                        <div class="form-elements">
-                          <input type="radio" name="radio-gmat" id="radio-gmat-2" />
-                        </div>
-                        <div class="form-elements">
-                          <label for="radio-gmat-2">No</label>
-                        </div>
-                      </fieldset>
-                    </li>
-                  </fieldset>
                 </ul>
                 <!-- /enrollment related -->
                 <ul class="clearfix field-group-border">
